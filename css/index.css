@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto&display=swap');
+
+body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+#sidebar {
+    background-color: #80ff80;
+    width: 15%;
+    height: 100%;
+}
+.site-brand {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #66ff66;
+    padding: 10px 0;
+}
+
+#chat-main {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#messages {
+    background-color: #e6e6e6;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.msg {
+    border: solid #cccccc;
+    border-width: 1px 0;
+    padding: 10px 7px;
+}
+
+#inputs {
+    background-color: #cccccc;
+    height: 5%;
+    display: flex;
+    align-items: center;
+}
+#text-input {
+    height: 70%;
+    width: 95%;
+    position: relative;
+    left: 7px;
+}
+.send {
+    width: 3%;
+    position: relative;
+    left: 15px;
+    color: black;
+}
+
+.logo {
+    width: 70px;
+}
