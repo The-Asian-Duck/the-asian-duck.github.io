@@ -11,17 +11,25 @@
 <body>
     <div id="sidebar">
         <span class="site-brand"><img class="logo" src="assets/Untitled drawing.png">chaapp</span>
+        <div id="username">
+            <label for="username">Username : </label>
+            <input name="username" id="username-input" type="text" maxlength="16" placeholder="type your username here">
+        </div>
     </div>
     <div id="chat-main">
         <div id="messages">
-            <div class="msg">Message 1</div>
-            <div class="msg">Message 2</div>
-            <div class="msg">Message 3</div>
+            <div class="center container">
+                <span id="no-messages">no messages yet :(</span>
+            </div>
         </div>
-        <div id="inputs">
-            <input id="text-input" type="text" placeholder="type here to begin chat">
-            <button class="send"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+        <div id="input-container">
+            <div id="inputs">
+                <input id="text-input" type="text" placeholder="type here to begin chat">
+            </div>
+            <button id="send"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
         </div>
     </div>
+    
+    <script src="js/sendText.js"></script>
 </body>
-</html>
+</html>      
