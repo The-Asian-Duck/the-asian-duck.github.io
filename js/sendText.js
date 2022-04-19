@@ -12,11 +12,10 @@ checkMessageAmount()
 
 function sendText(messageString){
 
-    const query = { message: messageString}
-    const path = '73.220.38.85:3000/send'
+    const path = `73.220.38.85:3000/send?message=${messageString}`
 
     if(messageString !== '' && messageString !== undefined){
-        axios.post(path, query).then(
+        axios.post(path).then(
             (response) => {
                 var result = response.data;
                 console.log(result);
