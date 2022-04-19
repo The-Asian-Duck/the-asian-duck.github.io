@@ -11,6 +11,24 @@ function checkMessageAmount() {
 checkMessageAmount()
 
 function sendText(messageString){
+
+    const query = { message: messageString}
+    const path = '73.220.38.85:3000/send'
+
+    if(messageString !== '' && messageString !== undefined){
+        axios.post(path, query).then(
+            (response) => {
+                var result = response.data;
+                console.log(result);
+            },
+            (error) => {
+                console.log(error);
+            }
+        );
+    }
+}
+
+function writeText(messageString){
     if(messageString !== '' && messageString !== undefined){
         const msgContainer = document.getElementById('messages')
         const username = document.getElementById('username-input');
