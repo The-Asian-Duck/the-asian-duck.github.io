@@ -15,15 +15,18 @@ function sendText(messageString){
     const path = `73.220.38.85:3000/send?message=${messageString}`
 
     if(messageString !== '' && messageString !== undefined){
-        axios.post(path).then(
-            (response) => {
-                var result = response.data;
-                console.log(result);
-            },
-            (error) => {
-                console.log(error);
+        async function postData () {
+            const response = await fetch(path, {
+              method: "POST",
+            })
+          
+            if (!response.ok) {
+              throw new Error(`Request failed with status ${reponse.status}`)
             }
-        );
+            console.log("Request successful!")
+        }
+        
+        postData()
     }
 }
 
