@@ -14,7 +14,7 @@ function sendText(messageString){
 
     const username = document.getElementById('username-input').value;
 
-    const path = `73.220.38.85:3000/send?message=${messageString}`
+    const path = `73.220.38.85:3000/send`
 
     const msgData = {
         username: username,
