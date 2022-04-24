@@ -14,7 +14,7 @@ function sendText(messageString){
 
     const username = document.getElementById('username-input').value;
 
-    const path = `73.220.38.85:3000/`
+    const path = `api.coolgamers.gq:3000/`
 
     const msgData = {
         username: username,
