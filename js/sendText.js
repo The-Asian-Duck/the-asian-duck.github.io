@@ -23,7 +23,7 @@ function sendText(messageString){
 
     const options = {
         method: 'GET',
-        body: JSON.stringify(msgData),
+        //body: JSON.stringify(msgData),
         headers: {
             'Content-Type': 'application/json'
         },
