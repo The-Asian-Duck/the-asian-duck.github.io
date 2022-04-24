@@ -14,7 +14,7 @@ function sendText(messageString){
 
     const username = document.getElementById('username-input').value;
 
-    const path = `73.220.38.85:3000/send`
+    const path = `73.220.38.85:3000/`
 
     const msgData = {
         username: username,
@@ -22,7 +22,7 @@ function sendText(messageString){
     }
 
     const options = {
-        method: 'POST',
+        method: 'GET',
         body: JSON.stringify(msgData),
         headers: {
             'Content-Type': 'application/json'
