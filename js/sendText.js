@@ -14,7 +14,7 @@ function sendText(messageString){
 
     const username = document.getElementById('username-input').value;
 
-    const path = `crocksandsocks.live:3000/`
+    const path = `https://api.coolgamers.gq:3000/`
 
     const msgData = {
         username: username,
